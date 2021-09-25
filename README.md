@@ -9,4 +9,5 @@ Ran into problems
 - I had to scrape images from google automatically
   - Used Splinter Python package
 - Some of the image names had empty spaces. I had to fill those spaces with a dash using a python script
+-  https://docs.google.com/spreadsheets/d/1HIIfgDpNMM-j0hoQHN-yP5P1lNOfJuvym0u0sdWwD9g/edit#gid=737896402 
 -  
