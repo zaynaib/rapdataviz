@@ -10,4 +10,7 @@ Ran into problems
   - Used Splinter Python package
 - Some of the image names had empty spaces. I had to fill those spaces with a dash using a python script
 -  https://docs.google.com/spreadsheets/d/1HIIfgDpNMM-j0hoQHN-yP5P1lNOfJuvym0u0sdWwD9g/edit#gid=737896402 
--  
+
+
+## Resource Articles
+[](https://www.geeksforgeeks.org/python-os-listdir-method/#:~:text=listdir()%20method%20in%20python,working%20directory%20will%20be%20returned)
