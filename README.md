@@ -23,4 +23,6 @@ https://dzone.com/articles/d3-js-axes-ticks-and-gridlines
 
 https://github.com/d3/d3-axis/issues/48
 
-What does the call method due? why does this work with hiding the line
+What does the call method do? why does this work with hiding the line?
+
+d3 grid lines https://bl.ocks.org/cagrimmett/07f8c8daea00946b9e704e3efcbd5739

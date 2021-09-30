@@ -32,19 +32,27 @@ let axis = d3.axisBottom()
 
 
 wrapper.append("g")
-       //.attr("transform",`translate(0,${dimensions.height/2})`)
        .attr("transform",`translate(0,${dimensions.height/4})`)
        .call(axis)
        .call(g => g.select(".domain").remove())
+ // Gridline
+ var gridlines = d3.axisTop()
+ .tickFormat("")
+ .tickSize(-dimensions.height)
+ .scale(xScale);
+
+wrapper.append("g")
+.attr("class", "grid")
+.call(gridlines);
+
   
-//wrapper.selectAll(".tick text").attr("transform", "translate(0,-5)");
   
 // Define the div for the tooltip
 var div = d3.select("body").append("div")	
 .attr("class", "tooltip")				
 .style("opacity", 0)
 //review css positioning
-.style("position","absolute")
+.style("position","absolute");
   
    //after circles are created lets create defs
  var defs = d3.select('svg').append("defs");
