@@ -1,30 +1,32 @@
 # Reverse Engineering of Pudding Graph
 
-I wanted to flex my D3.js a bit by recreating this graph from pudding.io.
-It was the graph that inspired me to learn more about data visualization.
+I wanted to flex my D3.js a bit by recreating a graph from pudding.io. It's a beeswarm plot that ranked American rappers
+by the number of unique words used in their lyrics. Here is a link to [The Largest Vocabulary In Hip Hop Data Viz](https://pudding.cool/projects/vocabulary/index.html) by [Matt Daniels](https://twitter.com/matthew_daniels). It was the graph that inspired me to learn more about data visualizations. I used the data from this article to reverse engineer this graph.
 
-https://pudding.cool/projects/vocabulary/index.html
+## Technologies Used
 
-Ran into problems
-- I had to scrape images from google automatically
-  - Used Splinter Python package
-- Some of the image names had empty spaces. I had to fill those spaces with a dash using a python script
--  https://docs.google.com/spreadsheets/d/1HIIfgDpNMM-j0hoQHN-yP5P1lNOfJuvym0u0sdWwD9g/edit#gid=737896402 
+- Excel
+  - Used Excel to replace white spaces of names in the csv file with dashes, [spinal case](https://stackoverflow.com/questions/11273282/whats-the-name-for-hyphen-separated-case).
+  
+- Python
+  - Splinter library for automating google searches for images of rappers displayed in this graph
+  - Pillow library for automating the task of resizing the images that were download to 30 x 30 px. This was done for the web page to be loaded faster since I have more than 30 assets to load.
 
+- JavaScript
+  - D3.js to generate the graph
 
-## Resource Articles
+## Resources
 
-Resources that helped me learn more about D3 along the way
+Many thanks to online tech communities that helped me learn more about D3.js
+
+Resources that helped me learn more about D3 along the way.
+
+[Jonathan Soma](https://www.youtube.com/watch?v=NTS7uXOxQeM&t=10s) has one of the best D3.js channels free on Youtube.
 
 [Python os.listdir method](https://www.geeksforgeeks.org/python-os-listdir-method/#:~:text=listdir()%20method%20in%20python,working%20directory%20will%20be%20returned)
 
-[Cutomizing D3 ticks](https://ghenshaw-work.medium.com/customizing-axes-in-d3-js-99d58863738b)
-https://dzone.com/articles/d3-js-axes-ticks-and-gridlines
+[Customizing D3 ticks](https://bl.ocks.org/wadefagen/ce5d308d8080130de10f21254273e30c)
 
-https://github.com/d3/d3-axis/issues/48
+[Hiding axis line in D3](https://github.com/d3/d3-axis/issues/48)
 
-What does the call method do? why does this work with hiding the line?
 
-d3 grid lines https://bl.ocks.org/cagrimmett/07f8c8daea00946b9e704e3efcbd5739
-
-https://bl.ocks.org/wadefagen/ce5d308d8080130de10f21254273e30c ****

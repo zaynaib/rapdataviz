@@ -47,7 +47,9 @@ wrapper.append("g")
 
   wrapper.append("g")
      .attr("class", "grid")
-     .attr("transform",`translate(0,${dimensions.height/4})`)
+     .attr("transform",`translate(0,${dimensions.height/3.5})`)
+     .style("stroke-dasharray",("3,3"))
+     .style("stroke","blue")
      .call(gridlines)
      .call(g => g.select(".domain").remove())
 

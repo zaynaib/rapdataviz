@@ -1,4 +1,9 @@
-.tick text{
-    fill:blue;
-    
+h1{
+    text-align: center;
 }
+
+.tick text{
+    fill:#5B00E6;
+    font-size: 1.5em;
+}
+
