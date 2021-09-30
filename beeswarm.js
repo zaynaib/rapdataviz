@@ -35,15 +35,21 @@ wrapper.append("g")
        .attr("transform",`translate(0,${dimensions.height/4})`)
        .call(axis)
        .call(g => g.select(".domain").remove())
- // Gridline
- var gridlines = d3.axisTop()
- .tickFormat("")
- .tickSize(-dimensions.height)
- .scale(xScale);
 
-wrapper.append("g")
-.attr("class", "grid")
-.call(gridlines);
+
+
+
+  // Gridline
+  var gridlines = d3.axisBottom()
+                    .tickFormat("")
+                    .tickSize(dimensions.height)
+                    .scale(xScale);
+
+  wrapper.append("g")
+     .attr("class", "grid")
+     .attr("transform",`translate(0,${dimensions.height/4})`)
+     .call(gridlines)
+     .call(g => g.select(".domain").remove())
 
   
   
