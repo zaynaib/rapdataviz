@@ -13,4 +13,14 @@ Ran into problems
 
 
 ## Resource Articles
-[](https://www.geeksforgeeks.org/python-os-listdir-method/#:~:text=listdir()%20method%20in%20python,working%20directory%20will%20be%20returned)
+
+Resources that helped me learn more about D3 along the way
+
+[Python os.listdir method](https://www.geeksforgeeks.org/python-os-listdir-method/#:~:text=listdir()%20method%20in%20python,working%20directory%20will%20be%20returned)
+
+[Cutomizing D3 ticks](https://ghenshaw-work.medium.com/customizing-axes-in-d3-js-99d58863738b)
+https://dzone.com/articles/d3-js-axes-ticks-and-gridlines
+
+https://github.com/d3/d3-axis/issues/48
+
+What does the call method due? why does this work with hiding the line

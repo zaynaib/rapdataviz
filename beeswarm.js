@@ -27,10 +27,17 @@ beeswarm = async () =>{
 //create custom axis
 
 let axis = d3.axisBottom()
-                .scale(xScale);
+                .scale(xScale)
+                .ticks(20,"~s");
+
+
 wrapper.append("g")
-       .attr("transform",`translate(0,${dimensions.height/2})`)
-       .call(axis);
+       //.attr("transform",`translate(0,${dimensions.height/2})`)
+       .attr("transform",`translate(0,${dimensions.height/4})`)
+       .call(axis)
+       .call(g => g.select(".domain").remove())
+  
+//wrapper.selectAll(".tick text").attr("transform", "translate(0,-5)");
   
 // Define the div for the tooltip
 var div = d3.select("body").append("div")	
