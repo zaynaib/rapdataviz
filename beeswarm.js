@@ -9,6 +9,8 @@ beeswarm = async () =>{
   const xAccessor = d => +d.words;
 
   //console.log(xAccessor(dataset[0]));
+  //select the selRappers
+  //add all the names of the rappers in the select form
 
   const dimensions = {
     width:1500,
@@ -30,7 +32,7 @@ beeswarm = async () =>{
 
 let axis = d3.axisBottom()
                 .scale(xScale)
-                .ticks(20,"~s");
+                .ticks(10,"~s");
 
 
 wrapper.append("g")

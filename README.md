@@ -28,9 +28,3 @@ Resources that helped me learn more about D3 along the way.
 [Customizing D3 ticks](https://bl.ocks.org/wadefagen/ce5d308d8080130de10f21254273e30c)
 
 [Hiding axis line in D3](https://github.com/d3/d3-axis/issues/48)
-
-https://stackoverflow.com/questions/24050345/get-image-dpi-for-tif-files-using-pillow
-
-https://stackoverflow.com/questions/40829577/setting-image-resolution-in-python-pillow
-
-https://stackoverflow.com/questions/6444548/how-do-i-get-the-picture-size-with-pil
