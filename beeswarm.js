@@ -1,9 +1,11 @@
 beeswarm = async () =>{
-    //Access data
+  
+  //Access data
   const dataset = await d3.csv('./hiphop2.csv');
 
-//  console.log(dataset)
+  console.log(dataset);
 
+  //Unary plus operarto + coverts a string into a number
   const xAccessor = d => +d.words;
 
   //console.log(xAccessor(dataset[0]));
